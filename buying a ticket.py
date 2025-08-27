@@ -1,7 +1,7 @@
 print("welcome to the rollercoaster")
 height=float(input("please enter your height in cms\n"))
 if height>=120:
-    print("you can ride the rollecoaster")
+    print("you can ride the rollercoaster")
     age=int(input("please enter your age:\n"))
     if age<=12:
         bill=4
@@ -19,4 +19,5 @@ if height>=120:
         print(f"your total bill is {bill+3}$")
 
 else:
+
     print("you must be 120cm or above to ride")    
