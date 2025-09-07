@@ -7,7 +7,7 @@ lives_remaining = 5
 correct_guesses = []
 
 while lives_remaining > 0:
-    user_input = input("Guess a letter: ")
+    user_input = input("Guess a letter: ").lower()
 
     if user_input in chosen_word:
         print("Yes, you are correct, please continue")
@@ -28,6 +28,7 @@ while lives_remaining > 0:
 
 if lives_remaining < 1:
     print("💀 Oops, you lose.")
+
 
 
 
