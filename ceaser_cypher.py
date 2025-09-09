@@ -8,16 +8,14 @@ def encrypt(original_text,shifted_number):
     for letter in original_text:
         shifted_position=(alphabets.index(letter) +shifted_number)%26
         new_letter=alphabets[shifted_position]
-        encoded_text=new_letter
-        cypher_text+=encoded_text
+        cypher_text+=new_letter
     print(f"the encoded word is {cypher_text}")
 def decrypt (original_text,shifted_number):
     cypher_text=""
     for letter in original_text:
         shifted_position=(alphabets.index(letter) -shifted_number)%26
         new_letter=alphabets[shifted_position]
-        encoded_text=new_letter
-        cypher_text+=encoded_text
+        cypher_text+=new_letter
     print(f"the decoded word is {cypher_text}")
 
 
@@ -26,3 +24,4 @@ if direction=="encode":
     encrypt(original_text=text,shifted_number=shift)
 elif direction=="decode":
     decrypt(original_text=text,shifted_number=shift)
+    
