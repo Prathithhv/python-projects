@@ -3,4 +3,5 @@ years_remaining=90-age
 months_remaining=years_remaining*12
 weeks_remaining=years_remaining*52
 days_remaining=years_remaining*365
-print(f"you have {days_remaining} days, {weeks_remaining} weeks, and {months_remaining} months left")
+
+print(f"Taking an assumption that 90 years is your life span you have {days_remaining} days, {weeks_remaining} weeks, and {months_remaining} months left")
